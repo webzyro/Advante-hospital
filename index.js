@@ -50,7 +50,7 @@ $(document).ready(function () {
   $(".testimonial-carousel").owlCarousel({
     loop: true,
     margin: 20,
-    nav: false,
+    nav: true,
     dots: true,
     autoplay: true,
     autoplayTimeout: 5000,
