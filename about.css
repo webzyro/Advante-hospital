@@ -105,6 +105,33 @@
   letter-spacing: 0.5px;
 }
 
+/* Doctor Team Styles */
+.doctor-card {
+  background: white;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.education-list {
+  font-size: 0.95rem;
+}
+
+.education-list i {
+  width: 20px;
+}
+
+@media (max-width: 768px) {
+  .doctor-card img {
+    height: 300px !important;
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .step-card {
     text-align: center;
