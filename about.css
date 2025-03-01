@@ -1,0 +1,134 @@
+/* Breadcrumb */
+.breadcrumb-section {
+  background: url("./Images/hair.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 30px 0;
+  position: relative;
+}
+
+.breadcrumb-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: white;
+}
+
+.breadcrumb-item.active {
+  color: white;
+}
+
+/* Top Section */
+.about-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-badge {
+  bottom: -20px;
+  right: 30px;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card {
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+/* How It Works Section Styles */
+.how-it-works {
+  background-color: #f8f9fa;
+}
+
+.step-card {
+  height: 100%;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.step-number {
+  top: -15px;
+  right: 20px;
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgba(13, 110, 253, 0.1);
+  line-height: 1;
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(13, 110, 253, 0.1);
+}
+
+.badge {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .step-card {
+    text-align: center;
+  }
+
+  .step-icon {
+    margin: 0 auto;
+  }
+
+  .step-number {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-badge {
+    width: 120px;
+    height: 120px;
+    bottom: -10px;
+    right: 20px;
+  }
+
+  .experience-badge .display-4 {
+    font-size: 2rem;
+  }
+}
