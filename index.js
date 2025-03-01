@@ -111,3 +111,26 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(document.querySelector("#stats-section"));
+
+// Show modal after page load
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    const appointmentModal = new bootstrap.Modal(
+      document.getElementById("appointmentModal")
+    );
+    appointmentModal.show();
+  }, 5000); // Shows after 2 seconds
+});
+
+// Handle form submission
+document
+  .getElementById("appointmentForm")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+    // Add your form submission logic here
+    const modal = bootstrap.Modal.getInstance(
+      document.getElementById("appointmentModal")
+    );
+    modal.hide();
+    // Show success message or handle the form data
+  });

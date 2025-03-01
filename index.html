@@ -35,6 +35,98 @@
     <title>Best Hair & Skin Clinic in Patna - Advante Clinic</title>
   </head>
   <body>
+    <!-- Appointment Modal -->
+    <div
+      class="modal fade"
+      id="appointmentModal"
+      tabindex="-1"
+      aria-labelledby="appointmentModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0">
+          <div class="modal-body p-0">
+            <button
+              type="button"
+              class="btn-close position-absolute end-0 top-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="row g-0">
+              <div class="col-md-6 d-none d-md-block">
+                <img
+                  src="./Images/sweta-advante.webp"
+                  alt="Hair Transformation"
+                  class="img-fluid h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-md-6 p-4">
+                <h2 class="fw-semibold mb-3 border-bottom border-2 rounded">
+                  Book Your Appointment
+                </h2>
+                <form id="appointmentForm">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Name*"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <div class="input-group">
+                      <select class="form-select" style="max-width: 100px">
+                        <option value="+91">India (+91)</option>
+                      </select>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        placeholder="Enter Mobile Number*"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <select class="form-select" required>
+                      <option value="" selected disabled>
+                        Select Location
+                      </option>
+                      <option value="delhi">Delhi</option>
+                      <option value="patna">Patna</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <textarea
+                      class="form-control"
+                      rows="3"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100 mb-3">
+                    Submit
+                  </button>
+                  <a
+                    href="tel:+91-+91-9650956637"
+                    class="btn btn-outline-primary w-100 btn-blink"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="ms-2">Free Consultation</span>
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-light bg-light shadow-lg sticky-top"
@@ -157,11 +249,13 @@
               </li>
             </ul>
             <div class="ms-2">
-              <a href="tel:+91-1234567890">
-                <button class="btn btn-outline-primary fw-semibold w-100">
-                  Book Appointment
-                </button>
-              </a>
+              <button
+                class="btn btn-outline-primary fw-semibold w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#appointmentModal"
+              >
+                Book Appointment
+              </button>
             </div>
           </div>
         </div>
@@ -808,6 +902,150 @@
           <a href="#" class="btn btn-outline-light rounded-pill px-4 mt-3"
             >Call Now</a
           >
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="gallery-section py-5">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <h2 class="display-5 fw-bold mb-4 text-secondary">Our Gallery</h2>
+              <p class="text-secondary lead">
+                Discover Our Transformative Results
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <!-- Gallery Item 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="gallery-card">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="./Images/gallery4.webp"
+                    alt="Gallery Image"
+                    class="img-fluid w-100"
+                  />
+                  <div class="gallery-overlay">
+                    <div class="gallery-content">
+                      <h5 class="text-white mb-2">Hair Transplant</h5>
+                      <p class="text-white-50 mb-0">Before & After Results</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="gallery-card">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="./Images/gallery2.webp"
+                    alt="Gallery Image"
+                    class="img-fluid w-100"
+                  />
+                  <div class="gallery-overlay">
+                    <div class="gallery-content">
+                      <h5 class="text-white mb-2">Skin Treatment</h5>
+                      <p class="text-white-50 mb-0">
+                        Skin Rejuvenation Results
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="gallery-card">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="./Images/gallery3.webp"
+                    alt="Gallery Image"
+                    class="img-fluid w-100"
+                  />
+                  <div class="gallery-overlay">
+                    <div class="gallery-content">
+                      <h5 class="text-white mb-2">Laser Treatment</h5>
+                      <p class="text-white-50 mb-0">Advanced Laser Therapy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="gallery-card">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="./Images/gallery1.webp"
+                    alt="Gallery Image"
+                    class="img-fluid w-100"
+                  />
+                  <div class="gallery-overlay">
+                    <div class="gallery-content">
+                      <h5 class="text-white mb-2">PRP Treatment</h5>
+                      <p class="text-white-50 mb-0">Natural Hair Growth</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="gallery-card">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="./Images/gallery5.webp"
+                    alt="Gallery Image"
+                    class="img-fluid w-100"
+                  />
+                  <div class="gallery-overlay">
+                    <div class="gallery-content">
+                      <h5 class="text-white mb-2">Skin Care</h5>
+                      <p class="text-white-50 mb-0">
+                        Professional Skin Treatment
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="gallery-card">
+                <div class="gallery-img-wrapper">
+                  <img
+                    src="./Images/hair-result-4.webp"
+                    alt="Gallery Image"
+                    class="img-fluid w-100"
+                  />
+                  <div class="gallery-overlay">
+                    <div class="gallery-content">
+                      <h5 class="text-white mb-2">Hair Care</h5>
+                      <p class="text-white-50 mb-0">Complete Hair Solutions</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- View All Button -->
+          <div class="text-center mt-5">
+            <a
+              href="/gallery.html"
+              class="btn btn-outline-primary rounded-pill px-5 py-2"
+            >
+              View All Gallery <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
         </div>
       </section>
 
