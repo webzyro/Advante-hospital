@@ -30,14 +30,40 @@ $(document).ready(function () {
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
     navText: [
-      '<i class="fas fa-chevron-left"></i>',
-      '<i class="fas fa-chevron-right"></i>',
+      "<i class='fa-solid fa-chevron-left'></i>",
+      "<i class='fa-solid fa-chevron-right'></i>",
     ],
     responsive: {
       0: {
         items: 1,
       },
       576: {
+        items: 2,
+      },
+      992: {
+        items: 3,
+      },
+    },
+  });
+
+  // Testimonial Carousel
+  $(".testimonial-carousel").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    navText: [
+      "<i class='fa-solid fa-chevron-left'></i>",
+      "<i class='fa-solid fa-chevron-right'></i>",
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
         items: 2,
       },
       992: {
