@@ -290,7 +290,11 @@
                 combine advanced technology with personalized care for
                 natural-looking results you can trust.
               </p>
-              <button class="btn btn-outline-light fw-semibold">
+              <button
+                class="btn btn-outline-light fw-semibold"
+                data-bs-toggle="modal"
+                data-bs-target="#appointmentModal"
+              >
                 Book Appointment
               </button>
             </div>
@@ -488,7 +492,7 @@
       <!-- Team Section -->
       <section class="w-100 py-5" id="team-container">
         <div class="container">
-          <div class="row mb-5">
+          <div class="row">
             <div class="col-12">
               <h2 class="text-center mb-4 fw-bold text-secondary">
                 India's Best Hair & Skin Treatment Clinic
@@ -589,80 +593,105 @@
         </div>
       </section>
 
-      <!-- Why Section -->
-      <section class="w-100 my-4" id="why-container">
+      <!-- About Section -->
+      <section class="w-100 my-5 py-5" id="about-container">
         <div class="container">
-          <div class="row">
+          <div class="row mb-2">
             <div class="col-12">
-              <h2 class="text-center mb-4 fw-bold text-secondary">
-                Why Choose Advante Hair & Skin Clinic?
+              <h2
+                class="text-center mb-4 fw-bold text-light text-decoration-underline link-offset-2"
+              >
+                About Advante Hair & Skin Clinic
               </h2>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md lg-3 mt-3">
-              <div class="new-card new-card1">
-                <div class="icon-round">
-                  <i
-                    class="fa-solid fa-thumbs-up fa-2xl"
-                    style="color: black"
-                  ></i>
-                </div>
-                <div class="mt-5">
-                  <h5 class="text-white fs-4 fw-bold pt-2 mb-2 text-nowrap">
-                    High Standard of Treatment
-                  </h5>
-                  <p class="fst-normal lh-sm">
-                    At Advante Clinic, we offer top-notch hair restoration and
-                    skin care treatments. Our expert team ensures premium
-                    services tailored to meet individual needs for exceptional
-                    results.
-                  </p>
-                </div>
-              </div>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <img
+                src="./Images/sweta-advante.webp"
+                alt="About Image"
+                class="img-fluid rounded shadow-lg"
+              />
             </div>
-            <div class="col-md lg-3 mt-3">
-              <div class="new-card new-card2">
-                <div class="icon-round" id="icon-round2">
-                  <i
-                    class="fa-solid fa-user-tie fa-2xl"
-                    style="color: white"
-                  ></i>
-                </div>
-                <div class="mt-5">
-                  <h5 class="text-dark fs-4 pt-2 fw-bold mb-2">
-                    Advanced Technology
-                  </h5>
-                  <p class="fst-normal lh-sm">
-                    We utilize cutting-edge laser technology, PRP therapy, and
-                    other advanced techniques to provide effective solutions for
-                    hair loss, skin rejuvenation, and more, ensuring safe
-                    results.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md lg-3 mt-3">
-              <div class="new-card new-card3">
-                <div class="icon-round">
-                  <i class="fa-solid fa-trophy fa-2xl" style="color: black"></i>
-                </div>
-                <div class="mt-5">
-                  <h5 class="text-white fs-4 fw-bold pt-2 mb-2">
-                    Trusted by Thousands
-                  </h5>
-                  <p class="fst-normal lh-sm">
-                    With a strong reputation in Patna, Advante Clinic is trusted
-                    by thousands for hair transplant and skin treatments,
-                    delivering outstanding results that boost confidence and
-                    satisfaction.
-                  </p>
-                </div>
+            <div class="col-md-6 g-4">
+              <h3 class="fw-bold text-light mb-3">
+                Welcome to Advante Hair & Skin Clinic
+              </h3>
+              <p class="text-light mb-2 lh-sm lead">
+                At Advante Clinic, we are dedicated to providing top-notch hair
+                restoration and skin care treatments. Our team of experts
+                combines advanced technology with personalized care to deliver
+                exceptional results.
+              </p>
+              <p class="text-light mb-2 lh-sm lead">
+                Our mission is to enhance your hair and skin's appearance,
+                leaving you feeling confident and radiant. With our
+                state-of-the-art equipment and skilled technicians, we strive to
+                provide personalized treatments that cater to your unique needs.
+              </p>
+              <p class="text-light mb-2 lh-sm lead">
+                We believe in the power of self-care and strive to create a
+                comfortable and relaxing atmosphere. Our team is committed to
+                providing you with the best possible experience, ensuring your
+                satisfaction is our top priority.
+              </p>
+              <p class="text-light mb-2 lh-sm lead">
+                Experience the difference with Advante Clinic. Book your
+                appointment today and let us take care of your hair and skin
+                care needs.
+              </p>
+
+              <div class="mt-4">
+                <a href="#" class="btn btn-outline-light fw-semibold">
+                  Book Appointment
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- <section class="w-100 my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-center mb-4 fw-bold text-secondary">
+                Gain Your Confidence, Just a Click Away!
+              </h2>
+            </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-3">
+            <div class="appointment">
+              <img src="./Images/appointment.png" alt="doctor-img" class="img-fluid object-fit-cover">
+            </div>
+            <a
+                class="stretched-link"
+                data-bs-toggle="modal"
+                data-bs-target="#appointmentModal"
+              >
+                Book Appointment
+              </a>
+          </div>
+          <div class="col-md-3">
+            <div class="appointment">
+              <img src="./Images/appointment.png" alt="doctor-img" class="img-fluid object-fit-cover">
+            </div>
+            <span>Request a Call</span>
+          </div>
+          <div class="col-md-3">
+            <div class="appointment">
+              <img src="./Images/appointment.png" alt="doctor-img" class="img-fluid object-fit-cover">
+            </div>
+            <span>Take The Hair Test</span>
+          </div>
+          <div class="col-md-3">
+            <div class="appointment">
+              <img src="./Images/appointment.png" alt="doctor-img" class="img-fluid object-fit-cover">
+            </div>
+            <span>Talk to Doctor</span>
+          </div>
+        </div>
+      </section> -->
 
       <!-- Stats Section -->
       <section class="py-5 text-white mt-4" id="stats-section">
@@ -762,56 +791,75 @@
         </div>
       </section>
 
-      <!-- About Section -->
-      <section class="w-100 my-5 py-5 bg-primary">
+      <!-- Why Section -->
+      <section class="w-100 my-4" id="why-container">
         <div class="container">
-          <div class="row mb-2">
+          <div class="row">
             <div class="col-12">
-              <h2 class="text-center mb-4 fw-bold text-light">
-                About Advante Hair & Skin Clinic
+              <h2 class="text-center mb-4 fw-bold text-secondary">
+                Why Choose Advante Hair & Skin Clinic?
               </h2>
             </div>
           </div>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <img
-                src="./Images/sweta-advante.webp"
-                alt="About Image"
-                class="img-fluid rounded shadow-lg"
-              />
+          <div class="row">
+            <div class="col-md lg-3 mt-3">
+              <div class="new-card new-card1">
+                <div class="icon-round">
+                  <i
+                    class="fa-solid fa-thumbs-up fa-2xl"
+                    style="color: black"
+                  ></i>
+                </div>
+                <div class="mt-5">
+                  <h5 class="text-white fs-4 fw-bold pt-2 mb-2 text-nowrap">
+                    High Standard of Treatment
+                  </h5>
+                  <p class="fst-normal lh-sm">
+                    At Advante Clinic, we offer top-notch hair restoration and
+                    skin care treatments. Our expert team ensures premium
+                    services tailored to meet individual needs for exceptional
+                    results.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="col-md-6 g-4">
-              <h3 class="fw-bold text-light mb-3">
-                Welcome to Advante Hair & Skin Clinic
-              </h3>
-              <p class="text-light mb-2 lh-sm lead">
-                At Advante Clinic, we are dedicated to providing top-notch hair
-                restoration and skin care treatments. Our team of experts
-                combines advanced technology with personalized care to deliver
-                exceptional results.
-              </p>
-              <p class="text-light mb-2 lh-sm lead">
-                Our mission is to enhance your hair and skin's appearance,
-                leaving you feeling confident and radiant. With our
-                state-of-the-art equipment and skilled technicians, we strive to
-                provide personalized treatments that cater to your unique needs.
-              </p>
-              <p class="text-light mb-2 lh-sm lead">
-                We believe in the power of self-care and strive to create a
-                comfortable and relaxing atmosphere. Our team is committed to
-                providing you with the best possible experience, ensuring your
-                satisfaction is our top priority.
-              </p>
-              <p class="text-light mb-2 lh-sm lead">
-                Experience the difference with Advante Clinic. Book your
-                appointment today and let us take care of your hair and skin
-                care needs.
-              </p>
-
-              <div class="mt-4">
-                <a href="#" class="btn btn-outline-light fw-semibold">
-                  Book Appointment
-                </a>
+            <div class="col-md lg-3 mt-3">
+              <div class="new-card new-card2">
+                <div class="icon-round" id="icon-round2">
+                  <i
+                    class="fa-solid fa-user-tie fa-2xl"
+                    style="color: white"
+                  ></i>
+                </div>
+                <div class="mt-5">
+                  <h5 class="text-dark fs-4 pt-2 fw-bold mb-2">
+                    Advanced Technology
+                  </h5>
+                  <p class="fst-normal lh-sm">
+                    We utilize cutting-edge laser technology, PRP therapy, and
+                    other advanced techniques to provide effective solutions for
+                    hair loss, skin rejuvenation, and more, ensuring safe
+                    results.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md lg-3 mt-3">
+              <div class="new-card new-card3">
+                <div class="icon-round">
+                  <i class="fa-solid fa-trophy fa-2xl" style="color: black"></i>
+                </div>
+                <div class="mt-5">
+                  <h5 class="text-white fs-4 fw-bold pt-2 mb-2">
+                    Trusted by Thousands
+                  </h5>
+                  <p class="fst-normal lh-sm">
+                    With a strong reputation in Patna, Advante Clinic is trusted
+                    by thousands for hair transplant and skin treatments,
+                    delivering outstanding results that boost confidence and
+                    satisfaction.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -1203,8 +1251,8 @@
                 Client Testimonials
               </h2>
               <p class="text-light lead">What Our Happy Clients Say About Us</p>
-              <div class="d-flex flex-column align-items-center gap-3">
-                <div class="d-flex align-items-center gap-3">
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="d-flex align-items-center gap-2">
                   <img
                     src="./Images/google.png"
                     alt="google"
@@ -1222,6 +1270,7 @@
                     <i class="fa-solid fa-star-half-stroke text-warning"></i>
                   </div>
                 </div>
+                <span class="text-light">Based on 250+</span>
               </div>
             </div>
           </div>
