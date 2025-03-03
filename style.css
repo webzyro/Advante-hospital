@@ -630,29 +630,27 @@ a {
 
 @media (max-width: 768px) {
   .footer-content {
-    text-align: center;
+    text-align: start;
     padding: 0 20px;
   }
 
   .social-links {
-    justify-content: center;
+    justify-content: start;
   }
 
   .footer-links,
   .footer-contact {
-    text-align: center;
+    text-align: start;
   }
 
   .footer-contact li {
-    justify-content: center;
+    justify-content: start;
   }
 
   .social-stat {
-    justify-content: center;
+    justify-content: start;
   }
-}
 
-@media (max-width: 768px) {
   .testimonial-item {
     padding: 10px;
   }
@@ -660,9 +658,7 @@ a {
   .testimonial-text {
     font-size: 1rem;
   }
-}
 
-@media (max-width: 768px) {
   .service-img-wrapper {
     height: 200px;
   }
@@ -674,15 +670,11 @@ a {
   .service-card {
     margin-bottom: 1rem;
   }
-}
 
-@media (max-width: 768px) {
   .video-wrapper iframe {
     height: 100%;
   }
-}
 
-@media (max-width: 768px) {
   .stat-card {
     padding: 1.5rem;
   }
@@ -698,21 +690,17 @@ a {
   .stat-card p {
     font-size: 1rem;
   }
-}
 
-@media (max-width: 991px) {
-  .team-carousel .card-img-top {
-    height: 250px;
-  }
-}
-
-@media (max-width: 768px) {
   #team-container {
     padding: 40px 0 !important;
   }
 }
 
 @media (max-width: 991px) {
+  .team-carousel .card-img-top {
+    height: 250px;
+  }
+
   .navbar-collapse {
     padding: 1rem 0;
   }

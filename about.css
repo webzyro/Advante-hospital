@@ -125,6 +125,96 @@
   width: 20px;
 }
 
+/* FAQ Section Styles */
+.faq-section {
+  background-color: #f8f9fa;
+}
+
+.custom-accordion .accordion-item {
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.custom-accordion .accordion-item:hover {
+  transform: translateY(-2px);
+}
+
+.custom-accordion .accordion-button {
+  background-color: #ffffff;
+  padding: 1.2rem;
+  box-shadow: none;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  color: #0d6efd;
+  background-color: #ffffff;
+}
+
+.custom-accordion .accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(13, 110, 253, 0.1);
+}
+
+.custom-accordion .accordion-button::after {
+  transition: all 0.3s ease;
+}
+
+.custom-accordion .accordion-body {
+  padding: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Service Section Styles */
+.service-card {
+  transition: all 0.3s ease;
+  border: 2px solid rgba(28, 60, 204, 0.87);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.additional-services {
+  transition: all 0.3s ease;
+}
+
+.additional-services:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    padding: 1.5rem !important;
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-accordion .accordion-button {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .custom-accordion .accordion-body {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 768px) {
   .doctor-card img {
     height: 300px !important;

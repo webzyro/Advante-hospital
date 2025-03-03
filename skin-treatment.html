@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+
+    <title>Best Hair, Skin & Laser Treatment Clinic in Patna</title>
+  </head>
+  <body>
+    <!-- Appointment Modal -->
+    <div
+      class="modal fade"
+      id="appointmentModal"
+      tabindex="-1"
+      aria-labelledby="appointmentModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0">
+          <div class="modal-body p-0">
+            <button
+              type="button"
+              class="btn-close position-absolute end-0 top-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="row g-0">
+              <div class="col-md-6 d-none d-md-block">
+                <img
+                  src="./Images/gallery6.webp"
+                  alt="Hair Transformation"
+                  class="img-fluid h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-md-6 p-4">
+                <h2 class="fw-semibold mb-3 border-bottom border-2 rounded">
+                  Book Your Appointment
+                </h2>
+                <form id="appointmentForm">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Name*"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <div class="input-group">
+                      <select class="form-select" style="max-width: 100px">
+                        <option value="+91">India (+91)</option>
+                      </select>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        placeholder="Enter Mobile Number*"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <select class="form-select" required>
+                      <option value="" selected disabled>
+                        Select Treatment
+                      </option>
+                      <option value="hair-treatment">Hair Treatment</option>
+                      <option value="skin-treatment">Skin Treatment</option>
+                      <option value="laser-treatment">Laser Treatment</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <textarea
+                      class="form-control"
+                      rows="3"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100 mb-3">
+                    Submit
+                  </button>
+                  <a
+                    href="tel:+91-+91-9650956637"
+                    class="btn btn-outline-primary w-100 btn-blink"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="ms-2">Free Consultation</span>
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light shadow-lg sticky-top"
+      id="navbar-container"
+    >
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand" href="/">
+          <img
+            src="./Images/Advante-Logo.png"
+            alt="Logo"
+            class="img-fluid w-75"
+          />
+        </a>
+        <!-- Replace navbar-toggler with offcanvas button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Add offcanvas -->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <a
+              class="navbar-brand offcanvas-title"
+              id="offcanvasNavbarLabel"
+              href="/"
+            >
+              <img
+                src="./Images/Advante-Logo.png"
+                alt="Logo"
+                class="img-fluid w-75"
+              />
+            </a>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark text-uppercase fw-semibold"
+                  href="/"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark text-uppercase fw-semibold"
+                  href="/about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-dark text-uppercase fw-semibold"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item fw-semibold"
+                      href="hair-treatment.html"
+                      >Hair Treatment</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fw-semibold"
+                      href="skin-treatment.html"
+                      >Skin Treatment</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fw-semibold"
+                      href="laser-treatment.html"
+                      >Laser Treatment</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item fw-semibold"
+                      href="botox-treatment.html"
+                      >Botox Treatment</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark text-uppercase fw-semibold"
+                  href="/gallery.html"
+                  >Our Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark text-uppercase fw-semibold"
+                  href="/our-doctors.html"
+                  >Our Doctor</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark text-uppercase fw-semibold"
+                  href="/contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <div class="ms-2">
+              <button
+                class="btn btn-outline-primary fw-semibold w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#appointmentModal"
+              >
+                Book Appointment
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb Section -->
+    <section class="breadcrumb-section position-relative">
+      <div class="breadcrumb-overlay"></div>
+      <div class="container position-relative">
+        <div class="row py-5">
+          <div class="col-12">
+            <h1 class="display-4 text-white fw-bold mb-3">
+              Skin Treatment Clinic in Patna
+            </h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="/" class="text-white text-decoration-none">Home</a>
+                </li>
+                <li
+                  class="breadcrumb-item active text-white"
+                  aria-current="page"
+                >
+                  Skin Treatment
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+      <section class="w-100 my-5">
+        <div class="container">
+          <div class="row g-4 mb-5">
+            <div class="col-md-6">
+              <img
+                src="./Images/skin1.jpg"
+                alt="hair-treatment"
+                class="img-fluid object-fit-cover rounded-3 shadow-lg"
+              />
+            </div>
+            <div class="col-md-6">
+              <span class="btn rounded-3 fw-semibold btn-primary"
+                >Treatment</span
+              >
+              <h1 class="h1 fw-bold mt-3 mb-4 lh-1">
+                Advanced Skin Treatment Solutions for Complete Skin Rejuvenation
+              </h1>
+              <p class="text-secondary mb-4">
+                Experience transformative results with our comprehensive skin
+                treatments, backed by cutting-edge technology and expert care.
+              </p>
+              <p class="text-secondary mb-4">
+                Our clinic offers comprehensive skin treatment solutions
+                including advanced laser therapy, chemical peels,
+                microdermabrasion, and specialized treatments for various skin
+                conditions. We use state-of-the-art technology combined with
+                proven medical expertise to deliver visible, long-lasting
+                results. Our team of experienced dermatologists provides
+                personalized care plans tailored to each patient's unique skin
+                concerns and aesthetic goals.
+              </p>
+              <p class="text-secondary mb-4">
+                At Advante Skin Clinic, we understand the impact that skin
+                concerns can have on your confidence and quality of life. Our
+                dedicated team of dermatologists is committed to providing
+                personalized solutions using the latest advancements in skin
+                treatment technology. Schedule a consultation today to discover
+                how we can help you achieve your skin rejuvenation goals.
+              </p>
+              <button
+                class="btn btn-outline-secondary fw-semibold w-50"
+                data-bs-toggle="modal"
+                data-bs-target="#appointmentModal"
+              >
+                Book Appointment
+              </button>
+            </div>
+          </div>
+          <div class="row g-4 pt-3">
+            <div class="col-md-6 order-2 order-md-1">
+              <h1 class="h1 fw-bold mt-3 mb-4 lh-1">
+                Skin Treatment at Advante Clinic
+              </h1>
+              <ul class="list-unstyled d-flex flex-column gap-3">
+                <li class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-angles-right fa-xl text-primary"></i>
+                  <span class="text-secondary"
+                    >Experience personalized skin treatments with advanced
+                    technology and expert care at our clinic</span
+                  >
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-angles-right fa-xl text-primary"></i>
+                  <span class="text-secondary"
+                    >Our advanced skin rejuvenation techniques combine proven
+                    dermatological methods with the cutting-edege innovations
+                    for optimal skin health</span
+                  >
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-angles-right fa-xl text-primary"></i>
+                  <span class="text-secondary"
+                    >Our expert dermatologists conduct thorough skin assessments
+                    and create customized treatment strategies based on your
+                    specific skin concerns and goals</span
+                  >
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-angles-right fa-xl text-primary"></i>
+                  <span class="text-secondary"
+                    >We utilize state-of-the-art skin treatment technologies and
+                    advanced equipment to ensure optimal aesthetic outcomes for
+                    our patients</span
+                  >
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-angles-right fa-xl text-primary"></i>
+                  <span class="text-secondary"
+                    >Our expert medical team delivers continuous care and
+                    personalized follow-up support to maximize treatment
+                    outcomes and ensure complete patient satisfaction</span
+                  >
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-angles-right fa-xl text-primary"></i>
+                  <span class="text-secondary"
+                    >Our team provides comprehensive patient education and
+                    personalized aftercare guidance to ensure optimal, lasting
+                    treatment outcomes</span
+                  >
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-angles-right fa-xl text-primary"></i>
+                  <span class="text-secondary"
+                    >We prioritize patient convenience with flexible scheduling
+                    options and extended hours to ensure timely access to our
+                    services</span
+                  >
+                </li>
+              </ul>
+              <button
+                class="btn btn-outline-secondary fw-semibold w-50"
+                data-bs-toggle="modal"
+                data-bs-target="#appointmentModal"
+              >
+                Book Appointment
+              </button>
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+              <img
+                src="./Images/skin2.jpg"
+                alt="hair-treatment"
+                class="img-fluid object-fit-cover rounded-3 shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section
+        class="cta-section d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="container d-flex flex-column align-items-center justify-content-center gap-3"
+        >
+          <p class="fs-1 text-white fw-bold text-center lh-sm">
+            Transform Your Look with Advante Hair, Skin & Laser Treatment
+          </p>
+          <p class="text-light w-75 text-center">
+            Experience exceptional care today - our dedicated team is ready to
+            guide you through personalized hair and skin treatments tailored
+            just for you.
+          </p>
+          <a href="#" class="btn btn-outline-light rounded-pill px-4 mt-3"
+            >Call Now</a
+          >
+        </div>
+      </section>
+
+      <!-- Why Choose -->
+      <section class="w-100 my-5 pt-5" id="why-container">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="text-center mb-4 fw-bold text-secondary">
+                Why Choose Advante Hair & Skin Clinic?
+              </h2>
+              <p class="text-secondary mb-4 mx-auto" style="max-width: 700px">
+                At Advante Hair & Skin Clinic, we combine advanced technology
+                with expert care to deliver exceptional results. Our experienced
+                team of specialists provides personalized treatments using
+                state-of-the-art equipment and proven techniques.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md lg-3 mt-3">
+              <div class="new-card new-card1">
+                <div class="icon-round">
+                  <i
+                    class="fa-solid fa-thumbs-up fa-2xl"
+                    style="color: black"
+                  ></i>
+                </div>
+                <div class="mt-5">
+                  <h5 class="text-white fs-4 fw-bold pt-2 mb-2 text-nowrap">
+                    High Standard of Treatment
+                  </h5>
+                  <p class="fst-normal lh-sm">
+                    At Advante Clinic, we offer top-notch hair restoration and
+                    skin care treatments. Our expert team ensures premium
+                    services tailored to meet individual needs for exceptional
+                    results.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md lg-3 mt-3">
+              <div class="new-card new-card2">
+                <div class="icon-round" id="icon-round2">
+                  <i
+                    class="fa-solid fa-user-tie fa-2xl"
+                    style="color: white"
+                  ></i>
+                </div>
+                <div class="mt-5">
+                  <h5 class="text-dark fs-4 pt-2 fw-bold mb-2">
+                    Advanced Technology
+                  </h5>
+                  <p class="fst-normal lh-sm">
+                    We utilize cutting-edge laser technology, PRP therapy, and
+                    other advanced techniques to provide effective solutions for
+                    hair loss, skin rejuvenation, and more, ensuring safe
+                    results.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md lg-3 mt-3">
+              <div class="new-card new-card3">
+                <div class="icon-round">
+                  <i class="fa-solid fa-trophy fa-2xl" style="color: black"></i>
+                </div>
+                <div class="mt-5">
+                  <h5 class="text-white fs-4 fw-bold pt-2 mb-2">
+                    Trusted by Thousands
+                  </h5>
+                  <p class="fst-normal lh-sm">
+                    With a strong reputation in Patna, Advante Clinic is trusted
+                    by thousands for hair transplant and skin treatments,
+                    delivering outstanding results that boost confidence and
+                    satisfaction.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="btn btn-outline-secondary mt-5 fw-semibold"
+            data-bs-toggle="modal"
+            data-bs-target="#appointmentModal"
+          >
+            Book Appointment
+          </button>
+        </div>
+      </section>
+
+      <!-- Hair Treatment Services -->
+      <section class="services-section py-5 bg-light">
+        <div class="container">
+          <div class="row mb-5 text-center">
+            <div class="col-12">
+              <span class="badge bg-primary px-3 py-2 mb-3">Our Services</span>
+              <h2 class="display-5 fw-bold mb-4">
+                Comprehensive Skin Treatment Solutions
+              </h2>
+              <p class="lead text-secondary mx-auto" style="max-width: 700px">
+                Discover our wide range of advanced skin treatment services
+                designed to address various skin concerns
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <!-- Service 1 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+              <div class="service-card h-100 p-4 rounded-4 shadow-sm bg-white">
+                <div
+                  class="service-icon mb-4 rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block"
+                >
+                  <i class="fas fa-user-md fa-2x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold mb-3">Skin rejuvenation</h3>
+                <p class="text-secondary mb-0">
+                  Advanced solutions for treating various types of hair loss
+                  using cutting-edge techniques and personalized treatment plans
+                  to restore hair growth and confidence.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-card h-100 p-4 rounded-4 shadow-sm bg-white">
+                <div
+                  class="service-icon mb-4 rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block"
+                >
+                  <i class="fas fa-seedling fa-2x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold mb-3">Skin Lightening</h3>
+                <p class="text-secondary mb-0">
+                  State-of-the-art DHI technique for natural-looking hair
+                  transplantation with minimal recovery time and maximum
+                  precision in follicle placement.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-card h-100 p-4 rounded-4 shadow-sm bg-white">
+                <div
+                  class="service-icon mb-4 rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block"
+                >
+                  <i class="fas fa-microscope fa-2x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold mb-3">Skin Tightening</h3>
+                <p class="text-secondary mb-0">
+                  Minimally invasive Follicular Unit Extraction technique
+                  offering natural results with minimal scarring and faster
+                  healing for permanent hair restoration.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+              <div class="service-card h-100 p-4 rounded-4 shadow-sm bg-white">
+                <div
+                  class="service-icon mb-4 rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block"
+                >
+                  <i class="fas fa-syringe fa-2x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold mb-3">Anti Ageing Treatment</h3>
+                <p class="text-secondary mb-0">
+                  Platelet-Rich Plasma therapy stimulates natural hair growth
+                  using your body's own growth factors for enhanced hair
+                  thickness and regeneration.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-card h-100 p-4 rounded-4 shadow-sm bg-white">
+                <div
+                  class="service-icon mb-4 rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block"
+                >
+                  <i class="fas fa-pump-medical fa-2x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold mb-3">Botox Fillers</h3>
+                <p class="text-secondary mb-0">
+                  Advanced mesotherapy delivers vital nutrients directly to hair
+                  follicles, promoting hair growth and improving scalp health
+                  through targeted treatment.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-card h-100 p-4 rounded-4 shadow-sm bg-white">
+                <div
+                  class="service-icon mb-4 rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block"
+                >
+                  <i class="fas fa-magic fa-2x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold mb-3">Acne & Acne scar Treament</h3>
+                <p class="text-secondary mb-0">
+                  Innovative cosmetic procedure creating the appearance of
+                  fuller hair through precise pigment application, perfect for
+                  those seeking a non-surgical solution.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 7 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-card h-100 p-4 rounded-4 shadow-sm bg-white">
+                <div
+                  class="service-icon mb-4 rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block"
+                >
+                  <i class="fas fa-magic fa-2x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold mb-3">Tattoo Removal</h3>
+                <p class="text-secondary mb-0">
+                  Innovative cosmetic procedure creating the appearance of
+                  fuller hair through precise pigment application, perfect for
+                  those seeking a non-surgical solution.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 8 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-card h-100 p-4 rounded-4 shadow-sm bg-white">
+                <div
+                  class="service-icon mb-4 rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block"
+                >
+                  <i class="fas fa-magic fa-2x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold mb-3">Weightloss Treatment</h3>
+                <p class="text-secondary mb-0">
+                  Innovative cosmetic procedure creating the appearance of
+                  fuller hair through precise pigment application, perfect for
+                  those seeking a non-surgical solution.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 9 -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-card h-100 p-4 rounded-4 shadow-sm bg-white">
+                <div
+                  class="service-icon mb-4 rounded-circle bg-primary bg-opacity-10 p-3 d-inline-block"
+                >
+                  <i class="fas fa-magic fa-2x text-primary"></i>
+                </div>
+                <h3 class="h5 fw-bold mb-3">Micro Blading</h3>
+                <p class="text-secondary mb-0">
+                  Innovative cosmetic procedure creating the appearance of
+                  fuller hair through precise pigment application, perfect for
+                  those seeking a non-surgical solution.
+                </p>
+              </div>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="col-12 text-center mt-5">
+              <div
+                class="additional-services p-4 rounded-4 bg-primary bg-opacity-10"
+              >
+                <h3 class="h4 fw-bold mb-4">Additional Specialized Services</h3>
+                <div class="row g-4">
+                  <div class="col-md-4">
+                    <div
+                      class="d-flex align-items-center justify-content-center gap-2 mb-3"
+                    >
+                      <i class="fas fa-check-circle text-primary"></i>
+                      <span class="fw-semibold">Body Contouring</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div
+                      class="d-flex align-items-center justify-content-center gap-2 mb-3"
+                    >
+                      <i class="fas fa-check-circle text-primary"></i>
+                      <span class="fw-semibold">Moles And Wart Removal</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div
+                      class="d-flex align-items-center justify-content-center gap-2 mb-3"
+                    >
+                      <i class="fas fa-check-circle text-primary"></i>
+                      <span class="fw-semibold">Hydra Facial</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="col-12 text-center mt-5">
+              <button
+                class="btn btn-primary btn-lg rounded-pill px-5"
+                data-bs-toggle="modal"
+                data-bs-target="#appointmentModal"
+              >
+                Schedule Your Consultation
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section py-5 bg-primary">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <span class="badge bg-light text-dark px-3 py-2 mb-3">FAQs</span>
+              <h2 class="display-5 fw-bold mb-4 text-light">
+                Frequently Asked Questions
+              </h2>
+              <p class="lead text-light mb-0 mx-auto" style="max-width: 700px">
+                Find answers to common questions about our skin treatment
+                procedures and services
+              </p>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="accordion custom-accordion" id="hairFAQ">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fw-semibold rounded-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq1"
+                    >
+                      What skin treatments do you offer at Advante Clinic?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#hairFAQ"
+                  >
+                    <div class="accordion-body text-secondary">
+                      We offer a comprehensive range of skin treatments
+                      including Skin Rejuvenation, Anti-Aging Solutions, Acne &
+                      Scar Treatment, Chemical Peels, Botox & Fillers, Skin
+                      Lightening, Skin Tightening, and specialized treatments
+                      for various skin conditions. Our treatments are
+                      personalized to address individual skin concerns and
+                      aesthetic goals, using advanced dermatological techniques
+                      and state-of-the-art technology.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fw-semibold rounded-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq2"
+                    >
+                      How long does it take to see results from skin treatments?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#hairFAQ"
+                  >
+                    <div class="accordion-body text-secondary">
+                      Results vary depending on the treatment type and
+                      individual response. Generally, visible improvements can
+                      be seen within 3-6 months of consistent treatment. Our
+                      doctors will provide a detailed timeline during your
+                      consultation based on your specific treatment plan.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fw-semibold rounded-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq3"
+                    >
+                      Are your hair treatment procedures safe?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#hairFAQ"
+                  >
+                    <div class="accordion-body text-secondary">
+                      Yes, all our treatments are FDA-approved and performed by
+                      certified medical professionals. We use state-of-the-art
+                      equipment and follow strict safety protocols. Each patient
+                      undergoes a thorough consultation to ensure the treatment
+                      is suitable for them.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fw-semibold rounded-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq4"
+                    >
+                      What is the cost of hair treatment at your clinic?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#hairFAQ"
+                  >
+                    <div class="accordion-body text-secondary">
+                      Treatment costs vary based on the type of procedure,
+                      number of sessions required, and individual needs. We
+                      offer free consultations where we provide detailed cost
+                      information and flexible payment options. Contact us to
+                      schedule a consultation.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fw-semibold rounded-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq5"
+                    >
+                      Do you provide post-treatment care support?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq5"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#hairFAQ"
+                  >
+                    <div class="accordion-body text-secondary">
+                      Yes, we provide comprehensive post-treatment care support.
+                      This includes detailed aftercare instructions, follow-up
+                      appointments, and continuous monitoring of your progress.
+                      Our team is always available to address any concerns
+                      during your recovery period.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-section pt-5 pb-3">
+      <div class="container">
+        <!-- Main Footer Content -->
+        <div class="row g-4 mb-5">
+          <!-- Company Info -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <div class="footer-content pe-lg-5">
+              <img
+                src="/Images/Advante-Logo.png"
+                alt="advante-logo"
+                class="img-fluid mb-4"
+                style="max-width: 200px"
+              />
+              <p class="text-white-50 mb-4">
+                Advante Hair Skin & Laser Clinic provides expert hair, skin, and
+                laser treatments in Patna. We offer personalized, advanced
+                solutions for your beauty and wellness needs.
+              </p>
+              <div class="social-links d-flex gap-3">
+                <a href="#" class="social-link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h4 class="text-white mb-4">Our Services</h4>
+            <ul class="footer-links list-unstyled">
+              <li>
+                <a href="#" class="footer-link"
+                  ><i class="fas fa-chevron-right me-2"></i>Hair Treatment</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link"
+                  ><i class="fas fa-chevron-right me-2"></i>Skin Treatment</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link"
+                  ><i class="fas fa-chevron-right me-2"></i>Laser Treatment</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-lg-4 col-md-6">
+            <h4 class="text-white mb-4">Contact Us</h4>
+            <ul class="footer-contact list-unstyled">
+              <li class="d-flex mb-3">
+                <i class="fas fa-location-dot mt-1 me-3"></i>
+                <p class="text-white-50 mb-0">
+                  1st Floor, House No. 5, Ashish Lane, Kidwai Puri
+                </p>
+              </li>
+              <li class="d-flex mb-3">
+                <i class="fas fa-phone mt-1 me-3"></i>
+                <p class="text-white-50 mb-0">+91-9650956637</p>
+              </li>
+              <li class="d-flex mb-3">
+                <i class="fas fa-envelope mt-1 me-3"></i>
+                <p class="text-white-50 mb-0">advanteclinicpatna@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social Stats -->
+        <div class="row g-4 py-4 border-top border-secondary">
+          <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+            <div class="d-flex align-items-center social-stat">
+              <i class="fas fa-star text-warning me-2"></i>
+              <div>
+                <h6 class="text-white mb-0">Google Reviews</h6>
+                <p class="text-white-50 mb-0">★★★★★ (800+ reviews)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+            <div class="d-flex align-items-center social-stat">
+              <i class="fab fa-youtube text-danger me-2"></i>
+              <div>
+                <h6 class="text-white mb-0">YouTube</h6>
+                <p class="text-white-50 mb-0">@advante</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+            <div class="d-flex align-items-center social-stat">
+              <i class="fab fa-instagram text-primary me-2"></i>
+              <div>
+                <h6 class="text-white mb-0">Instagram</h6>
+                <p class="text-white-50 mb-0">@advante</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="d-flex align-items-center social-stat">
+              <i class="fab fa-facebook text-primary me-2"></i>
+              <div>
+                <h6 class="text-white mb-0">Facebook</h6>
+                <p class="text-white-50 mb-0">@advante</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center pt-4 border-top border-secondary">
+          <p class="text-white-50 mb-0">
+            Copyright © 2024 Advante Hair, Skin & Laser Clinic. All Rights
+            Reserved. | Developed by
+            <a
+              href="https://webzyro.com"
+              class="text-decoration-none text-primary"
+              >Webzyro</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      async
+    ></script>
+    <!-- Aos Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+      });
+    </script>
+    <!-- Owl Carousel -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
