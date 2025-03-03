@@ -71,6 +71,41 @@ $(document).ready(function () {
       },
     },
   });
+
+  $(".skin-conditions-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    dots: true,
+    nav: false,
+    smartSpeed: 1000,
+    animateIn: "slideInRight",
+    animateOut: "slideOutLeft",
+    responsive: {
+      0: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+      992: {
+        items: 5,
+      },
+    },
+  });
+  $(".banner-carousel").owlCarousel({
+    loop: true,
+    margin: 30,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    dots: true,
+    nav: false,
+    items: 1,
+    smartSpeed: 1000,
+  });
 });
 
 // Counter Animation
