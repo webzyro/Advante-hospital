@@ -20,6 +20,15 @@ a {
   color: inherit;
 }
 
+.primary-btn {
+  background-color: var(--bg-primary);
+  color: white;
+}
+
+.primary-color {
+  color: var(--bg-primary);
+}
+
 p,
 h1,
 h2,
@@ -65,7 +74,7 @@ h6 {
 #banner-container {
   height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./Images/banner1.jpg");
+    url("./Images/hair-skin-care-clinic-in-patna.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -640,6 +649,10 @@ a {
 }
 
 @media (max-width: 768px) {
+  .result-carousel .owl-nav button {
+    display: none;
+  }
+
   .footer-content {
     text-align: start;
     padding: 0 20px;
